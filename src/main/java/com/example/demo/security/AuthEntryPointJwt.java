@@ -21,7 +21,8 @@ public class AuthEntryPointJwt implements AuthenticationEntryPoint{
 	public void commence(HttpServletRequest request, HttpServletResponse response,
 			AuthenticationException authException) throws IOException, ServletException {
 		// TODO Auto-generated method stub
-		LOG.error("Error por no autorizacion {}",authException.getMessage());
+		LOG.error("Error por que no se dio autorizacion {}",authException.getMessage());
+		LOG.error("Error request serverlesPath {}",request.getServletPath());
 	}
 
 }

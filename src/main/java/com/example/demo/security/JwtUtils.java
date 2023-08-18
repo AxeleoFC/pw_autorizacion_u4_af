@@ -22,7 +22,7 @@ public class JwtUtils {
 	@Value("${app.jw.expiration.ms}")
 	private Integer jwExpiration;
 	
-	public String generarJwtToken(Authentication authentication, String nombre) {
+	public String generarJwtToken(String nombre) {
 		//Lo mas comun es que estos datos esten en un archivo properties o en una BD
 		LOG.info("Semilla: "+jwSecret+" /Tiempo: "+jwExpiration);
 		return Jwts.builder()
