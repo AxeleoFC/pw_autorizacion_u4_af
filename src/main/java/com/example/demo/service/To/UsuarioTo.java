@@ -11,6 +11,8 @@ public class UsuarioTo implements Serializable{
 	
 	private String nombre;
 	private String password;
+	private String semilla;
+	private Integer expiracion;
 	
 	//Set y Get
 	public String getNombre() {
@@ -24,6 +26,18 @@ public class UsuarioTo implements Serializable{
 	}
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	public String getSemilla() {
+		return semilla;
+	}
+	public void setSemilla(String semilla) {
+		this.semilla = semilla;
+	}
+	public Integer getExpiracion() {
+		return expiracion;
+	}
+	public void setExpiracion(Integer expiracion) {
+		this.expiracion = expiracion;
 	}
 	
 	
